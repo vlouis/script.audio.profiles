@@ -9,3 +9,5 @@ I think most of people using this addon to change the sound output between only 
 In my case between HDMI and USB. I want to switch the output using android remote app,
 but running the addon will enter in config save mode... I want to modify to be able to disable 
 the config save mode in settings, and when disabled running the addon to toggle the output.
+
+RPi version: will try to add GPIO output option to settings (amplifier power on/off)
