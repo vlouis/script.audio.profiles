@@ -37,7 +37,7 @@ sProfile = {
 }
 cecCommands = ['', 'CECActivateSource', 'CECStandby', 'CECToggleState']
 
-learnmode = ADDON.getSetting('learn')
+learnmode = ADDON.getSetting('learn').lower()
 
 class PROFILES:
 
@@ -48,7 +48,7 @@ class PROFILES:
         #if (len(sys.argv) < 2 or len(sys.argv[0]) == 0):
         #    mode = False
         # VL mod: using config "learn" value
-        if (learnmode):
+        if (learnmode == 'true'):
             mode = False
         elif (len(sys.argv) < 2 or len(sys.argv[0]) == 0):
             mode = str('0')
